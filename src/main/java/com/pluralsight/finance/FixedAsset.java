@@ -3,23 +3,38 @@ package com.pluralsight.finance;
 public class FixedAsset implements IValuable {
 
     //add in given variables
-    String name;
-    double MarketValue;
-    double getValue;
+    private String name;
+    private double MarketValue;
+    private double value;
 
     //add constructors
 
+    public FixedAsset(String name, double marketValue, double value) {
+        this.name = name;
+        MarketValue = marketValue;
+        this.value = value;
+    }
 
-    //add getters and setters
 
+    //add getters only
+
+    public String getName() {
+        return name;
+    }
+
+    public double getMarketValue() {
+        return MarketValue;
+    }
+
+    public double getValue() {
+        return value;
+    }
 
     //add derived asset
+    public String toAsset() {
+        return this.name + "$" + this.value;
 
-
-    //add asset constructors
-
-
-    //add asset getters and setters
+    }
 
 
 }

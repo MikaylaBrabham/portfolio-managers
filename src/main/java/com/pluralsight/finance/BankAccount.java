@@ -39,10 +39,22 @@ public void withdraw(double amount){
         this.balance -= amount;
 }
 
+// add value
 
-//add get value
     @Override
     public double getValue() {
-        return this.balance;
+        return 0;
+    }
+
+    //add tostring
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "name='" + name + '\'' +
+                ", accountNumber='" + accountNumber + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 }
+

@@ -37,5 +37,21 @@ public class CreditCard implements IValuable {
     }
 
     //add derived methods
+    public void charge(double amount){
+        this.balance -= amount;
+    }
 
+    public void pay(double amount){
+        this.balance += amount;
+    }
+
+// add to string
+    @Override
+    public String toString() {
+        return "CreditCard{" +
+                "name='" + name + '\'' +
+                ", accountNumber='" + accountNumber + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }

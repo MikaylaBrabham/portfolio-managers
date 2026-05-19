@@ -31,7 +31,7 @@ public class FixedAsset implements IValuable {
     }
 
     //add derived asset
-    public String toAsset() {
+    public String toString() {
         return this.name + "$" + this.value;
 
     }

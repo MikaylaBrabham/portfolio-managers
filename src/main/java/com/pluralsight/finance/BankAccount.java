@@ -43,7 +43,7 @@ public void withdraw(double amount){
 
     @Override
     public double getValue() {
-        return 0;
+        return getBalance();
     }
 
     //add tostring

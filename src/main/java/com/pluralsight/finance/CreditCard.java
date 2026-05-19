@@ -30,11 +30,6 @@ public class CreditCard implements IValuable {
         return balance;
     }
 
-    //add value
-    @Override
-    public double getValue() {
-        return 0;
-    }
 
     //add derived methods
     public void charge(double amount){
@@ -53,5 +48,10 @@ public class CreditCard implements IValuable {
                 ", accountNumber='" + accountNumber + '\'' +
                 ", balance=" + balance +
                 '}';
+    }
+    //add value
+    @Override
+    public double getValue() {
+        return this.balance;
     }
 }

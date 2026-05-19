@@ -36,5 +36,4 @@ public class FixedAsset implements IValuable {
 
     }
 
-
 }

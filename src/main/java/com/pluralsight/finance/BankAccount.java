@@ -41,9 +41,8 @@ public void withdraw(double amount){
 
 
 //add get value
-
     @Override
     public double getValue() {
-        return 0;
+        return this.balance;
     }
 }

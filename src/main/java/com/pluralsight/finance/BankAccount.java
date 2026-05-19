@@ -1,4 +1,5 @@
 package com.pluralsight.finance;
+//add scanner
 
 public class BankAccount implements IValuable{
 //add needed variables
@@ -30,6 +31,19 @@ public class BankAccount implements IValuable{
 
 
     //add derived variables
+public void deposit(double amount){
+        this.balance += amount;
+}
+
+public void withdraw(double amount){
+        this.balance -= amount;
+}
 
 
+//add get value
+
+    @Override
+    public double getValue() {
+        return 0;
+    }
 }

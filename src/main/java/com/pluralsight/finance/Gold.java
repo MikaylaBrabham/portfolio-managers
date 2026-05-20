@@ -2,22 +2,32 @@ package com.pluralsight.finance;
 
 public class Gold extends FixedAsset {
 
-    //add constructor from fixed asset
-    public Gold(String name, double marketValue, double value) {
-        super(name, marketValue, value);
+        //add karat
+    private double karat;
 
+    //add constructor from fixed asset
+    public Gold(String name, double marketValue, double value, double karat) {
+        super(name, marketValue, value);
+        this.karat = karat;
     }
-    //add marketvalue and override as karat
-    public double karat(double marketValue){
-        return marketValue;
+
+    // add getter
+    public double getKarat() {
+        return karat;
     }
+    // add setter
+    public void setKarat(double karat) {
+        this.karat = 3000;
+    }
+    // add karat
+
+
 
     // add jewelry
-    public void jewelry(){
+    public jewelry() {
+
 
     }
-
-
 
     // add value
     @Override

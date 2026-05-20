@@ -4,14 +4,14 @@ public abstract class FixedAsset implements IValuable {
 
     //add in given variables
     private String name;
-    private double MarketValue;
+    private double marketValue;
     private double value;
 
     //add constructors
 
     public FixedAsset(String name, double marketValue, double value) {
         this.name = name;
-        MarketValue = marketValue;
+        this.marketValue = marketValue;
         this.value = value;
     }
 
@@ -23,7 +23,7 @@ public abstract class FixedAsset implements IValuable {
     }
 
     public double getMarketValue() {
-        return MarketValue;
+        return marketValue;
     }
 
     public double getValue() {

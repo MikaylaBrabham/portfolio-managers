@@ -33,10 +33,19 @@ public class Portfolio {
     }
 
     //add getmostvaluable
-    public double getMostValuable(IValuable valuable){
+    public double getMostValuable() {
         //make high varaible starts index 0
         IValuable high = valuables.get(0);
+
+        //create for loop to get highest from the Ivaluables
+        for (IValuable valuable : valuables) {
+            if (valuable.getValue() > high.getValue()) {
+                high = valuable;
+            }
+        }
+        return high.getValue();
     }
+
 
     //add getleastvaluable
 

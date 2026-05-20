@@ -33,6 +33,10 @@ public class Portfolio {
     }
 
     //add getmostvaluable
+    public double getMostValuable(IValuable valuable){
+        //make high varaible starts index 0
+        IValuable high = valuables.get(0);
+    }
 
     //add getleastvaluable
 

@@ -18,6 +18,12 @@ public class Portfolio {
     }
 
 
-    //add assets list
+    //add asset valuable
+
+    // add get value
+
+    //add getmostvaluable
+
+    //add getleastvaluable
 
 }

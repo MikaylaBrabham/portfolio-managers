@@ -18,7 +18,7 @@ public class Portfolio {
     }
 
     //add asset valuable
-    public void add(IValuable valuable){
+    public void add(IValuable valuable) {
 
         valuables.add(valuable);
     }
@@ -46,7 +46,17 @@ public class Portfolio {
         return high.getValue();
     }
 
-
     //add getleastvaluable
+    public double getLeastValuable() {
+        //make least variable starts index 0
+        IValuable low = valuables.get(0);
 
+        //create for loop to get lowest from the Ivaluables
+        for (IValuable valuable : valuables) {
+            if (valuable.getValue() < low.getValue()) {
+                low = valuable;
+            }
+        }
+        return low.getValue();
+    }
 }

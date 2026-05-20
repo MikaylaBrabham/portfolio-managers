@@ -1,14 +1,23 @@
 package com.pluralsight.finance;
 
-public class Portfolio extends FixedAsset{
+import java.util.ArrayList;
+import java.util.List;
+
+public class Portfolio {
 
     //add variables
+    private String name;
     private String owner;
-
+    private List<IValuable> valuables;
 
     //add constructors
-    public Portfolio(String name, double marketValue, String owner) {
-        super(name, marketValue);
+    public Portfolio(String name, String owner, List<IValuable> valuables) {
+        this.name = name;
         this.owner = owner;
+        this.valuables = valuables;
     }
+
+
+    //add assets list
+
 }

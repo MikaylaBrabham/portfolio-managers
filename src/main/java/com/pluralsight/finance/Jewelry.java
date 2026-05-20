@@ -10,8 +10,16 @@ public class Jewelry extends FixedAsset{
         super(name, marketValue);
         this.karat = karat;
     }
+
+
     //added karat getter
     public double getKarat() {
         return karat;
+
     }
-}
+    // add value
+        @Override
+        public double getValue() {
+            return super.getValue();
+        }
+    }

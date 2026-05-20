@@ -22,7 +22,12 @@ public class FinanceApplication {
         BankAccount ChaseBankSaving = new BankAccount(12345623, "Mikayla", 876.13);
         CreditCard Discover = new CreditCard("Lola", 8763682, 600 );
 
-        // add
+        // add valuables
+        myPortfolio.add(new Gold("backyard finds", 60000.00, 50));
+        myPortfolio.add(new Jewelry("Family Heirlooom necklace", 57376.12, 68 ));
+        myPortfolio.add(new House("Swtzerland Getaway", 850000.56, 2015, 20968,3));
+
+        //add print statments
 
 
 

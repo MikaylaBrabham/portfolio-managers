@@ -11,16 +11,26 @@ public class Portfolio {
     private List<IValuable> valuables;
 
     //add constructors
-    public Portfolio(String name, String owner, List<IValuable> valuables) {
+    public Portfolio(String name, String owner) {
         this.name = name;
         this.owner = owner;
-        this.valuables = valuables;
+        this.valuables = new ArrayList<>();
     }
 
-
     //add asset valuable
+    public void add(IValuable valuable){
+
+        valuables.add(valuable);
+    }
 
     // add get value
+    public double getValue() {
+        double total = 0;
+        for (IValuable valuable : valuables) {
+            total += valuable.getValue();
+        }
+        return total;
+    }
 
     //add getmostvaluable
 

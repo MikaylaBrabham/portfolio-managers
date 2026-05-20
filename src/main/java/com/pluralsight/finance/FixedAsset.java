@@ -1,6 +1,6 @@
 package com.pluralsight.finance;
 
-public class FixedAsset implements IValuable {
+public abstract class FixedAsset implements IValuable {
 
     //add in given variables
     private String name;
@@ -35,5 +35,6 @@ public class FixedAsset implements IValuable {
         return this.name + "$" + this.value;
 
     }
+
 
 }

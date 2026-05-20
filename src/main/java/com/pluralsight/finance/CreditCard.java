@@ -4,12 +4,12 @@ public class CreditCard implements IValuable {
     //add derived strings
 
     private String name;
-    private String accountNumber;
+    private int accountNumber;
     private double balance;
 
     // add constructor
 
-    public CreditCard(String name, String accountNumber, double balance) {
+    public CreditCard(String name, int accountNumber, double balance) {
         this.name = name;
         this.accountNumber = accountNumber;
         this.balance = balance;
@@ -22,7 +22,7 @@ public class CreditCard implements IValuable {
         return name;
     }
 
-    public String getAccountNumber() {
+    public int getAccountNumber() {
         return accountNumber;
     }
 

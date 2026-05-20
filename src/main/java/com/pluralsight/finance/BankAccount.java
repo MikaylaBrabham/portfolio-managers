@@ -4,12 +4,12 @@ package com.pluralsight.finance;
 public class BankAccount implements IValuable{
 //add needed variables
     private String name;
-    private String accountNumber;
+    private int accountNumber;
     private double balance;
 
 // add constructor
 
-    public BankAccount(String name, String accountNumber, double balance) {
+    public BankAccount(int accountNumber,String name, double balance) {
         this.name = name;
         this.accountNumber = accountNumber;
         this.balance = balance;
@@ -21,14 +21,17 @@ public class BankAccount implements IValuable{
         return name;
     }
 
-    public String getAccountNumber() {
+    public int getAccountNumber() {
         return accountNumber;
     }
 
     public double getBalance() {
         return balance;
     }
-
+//add value
+    public double getValue() {
+        return balance;
+    }
 
     //add derived variables
 public void deposit(double amount){
@@ -39,12 +42,6 @@ public void withdraw(double amount){
         this.balance -= amount;
 }
 
-// add value
-
-    @Override
-    public double getValue() {
-        return getBalance();
-    }
 
     //add tostring
 

@@ -11,6 +11,8 @@ public class FinanceApplication  {
         IValuable account2 = new BankAccount(456, "Gary", 1500);
 // try to deposit money into both accounts
         account1.deposit(100);
-        account2.deposit(100);
+        //account2.deposit(100);
     }
+
+    //account 2 doesn't work because we didn't declare it in the valuable the only rule passed is theneed to get value
 }

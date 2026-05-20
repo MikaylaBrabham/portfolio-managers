@@ -5,16 +5,13 @@ public abstract class FixedAsset implements IValuable {
     //add in given variables
     private String name;
     private double marketValue;
-    private double value;
 
     //add constructors
 
-    public FixedAsset(String name, double marketValue, double value) {
+    public FixedAsset(String name, double marketValue) {
         this.name = name;
         this.marketValue = marketValue;
-        this.value = value;
     }
-
 
     //add getters only
 
@@ -26,13 +23,16 @@ public abstract class FixedAsset implements IValuable {
         return marketValue;
     }
 
+    //add getvalue
+    @Override
     public double getValue() {
-        return value;
+        return marketValue;
     }
 
     //add derived asset
+    @Override
     public String toString() {
-        return this.name + "$" + this.value;
+        return this.name + "$" + this.marketValue;
 
     }
 

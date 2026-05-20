@@ -1,30 +1,34 @@
 package com.pluralsight.finance;
 
-public class Gold extends FixedAsset {
+public class Gold implements IValuable{
 
-        //add karat
-    private double karat;
+     private double weight;
+     private double
 
     //add constructor from fixed asset
-    public Gold(String name, double marketValue, double value, double karat) {
+    public Gold(String name, double marketValue, double value, double weigh) {
         super(name, marketValue, value);
-        this.karat = karat;
+        this.weigh = weigh;
     }
 
     // add getter
-    public double getKarat() {
-        return karat;
+    public double getWeigh() {
+        return weigh;
     }
     // add setter
-    public void setKarat(double karat) {
-        this.karat = 3000;
+    public void setWeigh(double weigh) {
+      this.weigh = 1;
     }
-    // add karat
-
-
+    // add weigh
+    @Override
+    public double getMarketValue() {
+        return 0.00;
+    }
 
     // add jewelry
     public jewelry() {
+        super();
+        double jewelry = this.karat * getMarketValue();
 
 
     }
